@@ -36,8 +36,10 @@ for (int i = 0; i < matr.GetLength(0); i++)
 
 FillArray(matrix1);
 FillArray(matrix2);
+System.Console.WriteLine("Матрица А ");
 PrintArray(matrix1);
 System.Console.WriteLine();
+System.Console.WriteLine("Матрица В ");
 PrintArray(matrix2);
 System.Console.WriteLine();
 
@@ -46,6 +48,7 @@ matrix3[0,1] = matrix1[0,0] * matrix2[0,1] + matrix1[0,1] * matrix2[1,1];
 matrix3[1,0] = matrix1[1,0] * matrix2[0,0] + matrix1[1,1] * matrix2[1,0];
 matrix3[1,1] = matrix1[1,0] * matrix2[0,1] + matrix1[1,1] * matrix2[1,1];
 
+System.Console.WriteLine(" А * В ");
 PrintArray(matrix3);
 
 
